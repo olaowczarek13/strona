@@ -1,0 +1,93 @@
+body {
+	background-color: whitesmoke;
+}
+
+#main-page div {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#main-page {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.main-header {
+	height: 150px;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	display: grid;
+	background-color: #40c0c4;
+}
+.title{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	
+}
+.h1{
+	font-family: 'Meddon', cursive;
+	font-size: 31px;
+}
+
+.main-nav {
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+.main-nav ul {
+	text-align: center;
+	padding: 12px;
+	font-size: 22px;
+	background-color: #727474;
+	height: 25px;
+	color: white;
+	margin-top: 0;
+}
+
+.main-nav li a:hover {
+	color: #38d6db;
+	font-weight: bold;
+}
+
+
+.main-nav li {
+	display: inline-block;
+	width: 18%;
+	border-right: 2px solid white;
+}
+
+.main-nav li:last-child {
+	border-right: none;
+}
+
+.main-img4 {
+	display: grid;
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-template-columns: auto auto auto auto;
+
+}
+
+.img4 {
+	text-align: center;
+	font-size: 23px;
+
+}
+
+a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+.img {
+	background-color: white;
+	border: 2px solid grey;
+	padding: 23px;
+
+}
+
+p {
+	margin: 0;
+}
