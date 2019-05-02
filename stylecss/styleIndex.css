@@ -1,93 +1,288 @@
 body {
-	background-color: whitesmoke;
+    margin: 0;
+    background-color: whitesmoke;
+    background-image: url(img/maps.png);
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 #main-page div {
-	font-family: 'Ubuntu', sans-serif;
-}
-
-#main-page {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .main-header {
-	height: 150px;
-	grid-column-start: 1;
-	grid-column-end: 5;
-	display: grid;
-	background-color: #40c0c4;
-}
-.title{
-	grid-column-start: 1;
-	grid-column-end: 5;
-	
-}
-.h1{
-	font-family: 'Meddon', cursive;
-	font-size: 31px;
+    background-color:
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0a0a0+0,a0a0a0+100&0+0,1+100 */
+        background: -moz-linear-gradient(left, rgba(160, 160, 160, 0) 0%, rgba(160, 160, 160, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(160, 160, 160, 0) 0%, rgba(160, 160, 160, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(160, 160, 160, 0) 0%, rgba(160, 160, 160, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a0a0a0', endColorstr='#a0a0a0', GradientType=1);
+    /* IE6-9 */
+    height: 150px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
 }
 
-.main-nav {
-	grid-column-start: 1;
-	grid-column-end: 5;
+.h1 {
+    font-size: 63px;
+    text-align: center;
+    color: #727474;
 }
+
+/*
+.main-nav {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+*/
 
 .main-nav ul {
-	text-align: center;
-	padding: 12px;
-	font-size: 22px;
-	background-color: #727474;
-	height: 25px;
-	color: white;
-	margin-top: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 22px;
+    background-color: #919191;
+    height: 25px;
+    color: white;
+    margin: 0;
 }
 
 .main-nav li a:hover {
-	color: #38d6db;
-	font-weight: bold;
+    font-weight: bold;
+    color: #141414;
+    font-size: 22px;
+    padding-bottom: 7px;
+    border-bottom: 5px solid #141414;
 }
 
 
 .main-nav li {
-	display: inline-block;
-	width: 18%;
-	border-right: 2px solid white;
+    display: inline-block;
+    width: 11%;
+    border-right: 2px solid white;
 }
 
 .main-nav li:last-child {
-	border-right: none;
+    border-right: none;
 }
 
 .main-img4 {
-	display: grid;
-	width: 100%;
-	grid-column-start: 1;
-	grid-column-end: 5;
-	grid-template-columns: auto auto auto auto;
-
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .img4 {
-	text-align: center;
-	font-size: 23px;
-
+    text-align: center;
+    font-size: 23px;
 }
 
-a {
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
 
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .img {
-	background-color: white;
-	border: 2px solid grey;
-	padding: 23px;
+    margin: 34px auto;
+    width: 500px;
+    background-color: white;
+    padding: 34px;
+    box-shadow: inset 0px 0px 10px;
+}
 
+
+
+h3 {
+    margin: -12px;
+}
+
+.imginfo {
+    margin: 0 25px 25px 25px;
+    text-align: justify;
 }
 
 p {
-	margin: 0;
+    margin: 0;
+
+}
+
+.news {
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+}
+
+.news-img {
+    float: left;
+    font-size: 23px;
+    text-align: justify;
+    margin: 23px;
+}
+
+.internet-area-logo {
+    height: 120px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #adadad;
+    text-align: center;
+}
+
+.mainIcon {
+    color: white;
+    font-size: 60px;
+    margin: 23px 45px;
+}
+
+
+/*
+.twitter {
+	animation-name: disappearance;
+	animation-duration: 5s;
+}
+*/
+
+@keyframes disappearance {
+    0% {
+        color: aqua;
+    }
+
+    50% {
+        color: aquamarine;
+    }
+
+    100% {
+        color: beige;
+    }
+}
+
+.twitter:hover {
+    transform: scale(0.1) rotate(500deg);
+    opacity: 0;
+    transition: 2s;
+
+}
+
+
+
+
+
+
+
+
+.facebook {
+    /*	transition: 5s;*/
+}
+
+.facebook:hover {
+    transform: scale(0.1) rotate(500deg);
+    opacity: 0;
+    transition: 2s;
+}
+
+.instagram {
+    /*	transition: 2s;*/
+}
+
+.instagram:hover {
+    transform: scale(0.1) rotate(500deg);
+    opacity: 0;
+    transition: 2s;
+}
+
+
+.snapchat {
+    /*	transition: 2s;*/
+}
+
+.snapchat:hover {
+    transform: scale(0.1) rotate(500deg);
+    opacity: 0;
+    transition: 2s;
+}
+
+
+
+.main-footer {
+    height: 170px;
+    grid-template-columns: auto auto auto;
+    display: grid;
+    background-color: #adadad;
+    color: white;
+    font-size: 23px;
+
+
+}
+
+.footer-contact-details {
+    margin: 0 auto;
+}
+
+.footer-main-nav {
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 125px;
+    color: white;
+    margin: 0 auto;
+
+}
+
+.e-mail:hover {
+    cursor: pointer;
+}
+
+.tel:hover {
+    cursor: pointer;
+
+
+}
+
+@media (min-width: 352px) {
+    .main-img4 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .main-img4 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-img4 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}
+
+
+.ppp {
+    background-image: url(img/ccc.jpg) width: 300px;
+    height: 200px;
+    border: 2px solid;
 }
